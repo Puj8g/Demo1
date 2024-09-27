@@ -5,7 +5,7 @@ Pull request:
   branches: [main]
 
 jobs:
-execute:
+ execute:
 
   runs on: ubuntu-latest
 
