@@ -7,7 +7,7 @@ Pull request:
 jobs:
 execute:
 
-  runs on: terminal
+  runs on: ubuntu-latest
 
   steps:
    - name: checout code   //checkout code to VM
@@ -19,3 +19,5 @@ execute:
   - name: run python app
     run: python app.py
   
+
+    
