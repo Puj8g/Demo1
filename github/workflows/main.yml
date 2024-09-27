@@ -1,0 +1,14 @@
+name : My first CI pipeline
+
+on:
+Pull request: 
+  branches: [main]
+
+jobs:
+execute:
+
+  runs on: unbuntu latest
+
+  steps:
+   - name: checout code   //checkout code to VM
+     uses: 
