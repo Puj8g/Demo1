@@ -1,23 +1,26 @@
-name : My first CI pipeline
+
+    name: My first CI pipeline
 
 on:
-Pull request: 
-  branches: [main]
+  pull_request:
+    branches: [main]
+
+  push:
+    branches: [main]
 
 jobs:
- execute:
+  execute:
+    runs-on: ubuntu-latest
 
-  runs on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4.2.0
 
-  steps:
-   - name: checout code   //checkout code to VM
-     uses: actions/checkout@v4.2.0
+      - name: Setup Python
+        uses: actions/setup-python@v5.2.0
 
-  - name: setup python
-    uses: actions/setup-python@v5.2.0
-
-  - name: run python app
-    run: python app.py
+      - name: Run python app
+        run: python app.py
   
 
     
