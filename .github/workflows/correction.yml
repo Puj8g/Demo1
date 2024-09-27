@@ -1,4 +1,4 @@
-name : My first CI pipeline
+name: CI pipeline
 
 on:
 Pull request: 
