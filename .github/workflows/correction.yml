@@ -12,3 +12,10 @@ execute:
   steps:
    - name: checout code   //checkout code to VM
      uses: actions/checkout@v4.2.0
+
+  - name: setup python
+    uses: actions/setup-python@v5.2.0
+
+  - name: run python app
+    run: python app.py
+  
