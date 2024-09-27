@@ -10,7 +10,7 @@ execute:
   runs on: terminal
 
   steps:
-   - name: checout code   //checkout code to VM
+   - name: checout code   
      uses: actions/checkout@v4.2.0
 
   - name: setup python
