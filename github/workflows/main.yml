@@ -7,7 +7,7 @@ Pull request:
 jobs:
 execute:
 
-  runs on: unbuntu latest
+  runs on: terminal
 
   steps:
    - name: checout code   //checkout code to VM
