@@ -1,5 +1,5 @@
 
-    name: My first CI pipeline
+name: CI pipeline
 
 on:
   pull_request:
@@ -21,6 +21,4 @@ jobs:
 
       - name: Run python app
         run: python app.py
-  
-
     
